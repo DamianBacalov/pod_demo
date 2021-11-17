@@ -37,7 +37,7 @@ RUN echo $'server {\n\
   include uwsgi_params;\n\
   uwsgi_pass unix:///tmp/uwsgi.sock;\n\
   }\n\
-  }' > /etc/nginx/conf.d/default.conf
+  }' > /etc/nginx/http.d/default.conf
 
 # CMD Entry point
 RUN touch ./nginx-flask-uwsgi.sh                        && \ 
