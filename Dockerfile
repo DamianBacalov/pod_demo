@@ -2,6 +2,7 @@ FROM alpine:latest
 
 RUN apk add --update --no-cache \
     python3 \
+    py3-pip \
     uwsgi \
     uwsgi-python3 \
     nginx \
